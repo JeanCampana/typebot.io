@@ -23,7 +23,7 @@ services:
         condition: service_healthy
     restart: always
     ports:
-      - '8080:3000'
+      - '7010:3000'
     extra_hosts:
       - 'host.docker.internal:host-gateway'
     env_file: .env.docker
@@ -37,5 +37,5 @@ services:
         condition: service_healthy
     restart: always
     ports:
-      - '8081:3000'
+      - '7011:3000'
     env_file: .env.docker
